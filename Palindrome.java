@@ -37,25 +37,37 @@ import java.util.*;
 
                             //Program-2(Numeric Palindrome)
 
-public class Palindrome{
+public class Palindrome {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter the Number:");
-        int n=sc.nextInt();
+        int n = sc.nextInt();
 
-        if(isPalindrome(n)){
+        if (isPalindrome(n)) {
             System.out.println("This is Palindrome");
-        }
-        else {
+        } else {
             System.out.println("This is not Palindrome");
         }
     }
 
-    public static boolean isPalindrome(int num){
+    public static boolean isPalindrome(int num) {
 
+        String str = Integer.toString(num);
+
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) == str.charAt(right)) {
+                left++;
+                right--;
+            } else {
+            return false;
+        }
 
     }
-
+        return true;
+    }
 }
