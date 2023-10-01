@@ -6,7 +6,7 @@ public class Palindrome {
         System.out.println("Enter the String:");
         String s = sc.nextLine();
 
-        if (isPalindrome(s)) {
+        if (Palindromeing(s)) {
             System.out.println("String is Palindrome.");
         } else {
             System.out.println("String is not an Palindrome");
@@ -14,7 +14,7 @@ public class Palindrome {
 
     }
 
-    public static boolean isPalindrome(String str) {
+    public static boolean Palindromeing(String str) {
 
         str = str.replaceAll("/s", "").toLowerCase();
 
