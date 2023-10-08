@@ -118,41 +118,17 @@ public class Arrays{
         for(i=0;i<Minsize;i++){
             result[i]=array1[i]+array2[i];
         }
-        System.out.println("Addition of two arrays:");
+        System.out.print("Addition of two arrays: [");
         for(i=0;i<Minsize;i++){
             System.out.print(result[i] + " ");
+           if (i < result.length - 1) {
+               System.out.print(", ");
+            }
         }
+
+        System.out.println("]");
     }
 }
-
-
-
-
-
-
-//public class Arrays {
-//    public static void main(String[] args) {
-//        int[] array1 = {1, 2, 3, 4, 5};
-//        int[] array2 = {6, 7, 8};
-//
-//        int minLength = Math.min(array1.length, array2.length);
-//        int[] sumArray = new int[minLength];
-//
-//        for (int i = 0; i < minLength; i++) {
-//            sumArray[i] = array1[i] + array2[i];
-//        }
-//
-//        System.out.print("Sum of arrays: [");
-//        for (int i = 0; i < sumArray.length; i++) {
-//            System.out.print(sumArray[i]);
-//            if (i < sumArray.length - 1) {
-//                System.out.print(", ");
-//            }
-//        }
-//        System.out.println("]");
-//    }
-//}
-
 
 
 
