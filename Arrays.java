@@ -131,28 +131,58 @@ import java.util.*;
 //}
 
                                //Program 3(find largest element in an array)
-class Arrays {
+
+//class Arrays {
+//    public static void main(String[] args){
+//
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter Size:");
+//        int size=sc.nextInt();
+//        int[] array=new int[size];
+//
+//        System.out.print("Enter Elements:");
+//        for(int i=0;i<size;i++){
+//            array[i]=sc.nextInt();
+//        }
+//
+//        int max=array[0];
+//        for(int i=0;i<array.length;i++){
+//            if(array[i]> max){
+//                max=array[i];
+//            }
+//        }
+//        System.out.println("Largest element of Array is: " + max);
+//    }
+//}
+
+                              //Program 4(Array Program to Print a 2D Array)
+
+class Arrays{
     public static void main(String[] args){
 
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter Size:");
+        System.out.print("Enter the size:");
         int size=sc.nextInt();
-        int[] array=new int[size];
 
-        System.out.print("Enter Elements:");
+        int[][] matrix=new int[size][size];
+
+        System.out.println("Enter the elements:");
+
         for(int i=0;i<size;i++){
-            array[i]=sc.nextInt();
+            for(int j=0;j<size;j++){
+                matrix[i][j]=sc.nextInt();
+            }
+            System.out.println();
         }
 
-        int max=array[0];
-        for(int i=0;i<array.length;i++){
-            if(array[i]> max){
-                max=array[i];
+        System.out.println("Printing the elements:");
+
+        for(int i=0;i<size;i++){
+            for(int j=0;j<size;j++){
+                System.out.print(matrix[i][j] + " ");
             }
+            System.out.println();
         }
-        System.out.println("Largest element of Array is: " + max);
+
     }
 }
-
-
-
