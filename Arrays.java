@@ -85,48 +85,72 @@ import java.util.*;
 
                            //Program-2.2 (Addition of Two Arrays (Different Size))
 
-public class Arrays{
-    public static void main(String[] args) {
+//public class Arrays{
+//    public static void main(String[] args) {
+//
+//        int i;
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter the Size of Array1:");
+//        int size1=sc.nextInt();
+//        System.out.print("Enter the Size of Array2:");
+//        int size2=sc.nextInt();
+//
+//        int[] array1=new int[size1];
+//        int[] array2=new int[size2];
+//
+//
+//        System.out.print("Elements of array1:");
+//          for(i=0;i<size1;i++){
+//              array1[i]=sc.nextInt();
+//          }
+//
+//          System.out.println();
+//
+//        System.out.print("Elements of array2:");
+//        for(i=0;i<size2;i++){
+//            array2[i]=sc.nextInt();
+//        }
+//
+//        int Minsize=Math.min(array1.length,array2.length);
+//        int[] result=new int[Minsize];
+//
+//        //Addition of two Arrays
+//        for(i=0;i<Minsize;i++){
+//            result[i]=array1[i]+array2[i];
+//        }
+//        System.out.print("Addition of two arrays: [");
+//        for(i=0;i<Minsize;i++){
+//            System.out.print(result[i] + " ");
+//           if (i < result.length - 1) {
+//               System.out.print(", ");
+//            }
+//        }
+//
+//        System.out.println("]");
+//    }
+//}
 
-        int i;
+                               //Program 3(find largest element in an array)
+class Arrays {
+    public static void main(String[] args){
+
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the Size of Array1:");
-        int size1=sc.nextInt();
-        System.out.print("Enter the Size of Array2:");
-        int size2=sc.nextInt();
+        System.out.print("Enter Size:");
+        int size=sc.nextInt();
+        int[] array=new int[size];
 
-        int[] array1=new int[size1];
-        int[] array2=new int[size2];
-
-
-        System.out.print("Elements of array1:");
-          for(i=0;i<size1;i++){
-              array1[i]=sc.nextInt();
-          }
-
-          System.out.println();
-
-        System.out.print("Elements of array2:");
-        for(i=0;i<size2;i++){
-            array2[i]=sc.nextInt();
+        System.out.print("Enter Elements:");
+        for(int i=0;i<size;i++){
+            array[i]=sc.nextInt();
         }
 
-        int Minsize=Math.min(array1.length,array2.length);
-        int[] result=new int[Minsize];
-
-        //Addition of two Arrays
-        for(i=0;i<Minsize;i++){
-            result[i]=array1[i]+array2[i];
-        }
-        System.out.print("Addition of two arrays: [");
-        for(i=0;i<Minsize;i++){
-            System.out.print(result[i] + " ");
-           if (i < result.length - 1) {
-               System.out.print(", ");
+        int max=array[0];
+        for(int i=0;i<array.length;i++){
+            if(array[i]> max){
+                max=array[i];
             }
         }
-
-        System.out.println("]");
+        System.out.println("Largest element of Array is: " + max);
     }
 }
 
