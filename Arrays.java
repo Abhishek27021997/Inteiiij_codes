@@ -272,12 +272,14 @@ class Arrays{
 
         }
 
-        //Sum of Diagonal
-       ;
+        //Primary Diagonal
+
         int Pri_Diagonal=0;
         for(int i=0;i<row;i++){
             Pri_Diagonal+=matrix[i][i];
         }
+
+        //Secondary Diagonal
 
         int Sec_Diagonal=0;
         for(int i=0;i<row;i++){
