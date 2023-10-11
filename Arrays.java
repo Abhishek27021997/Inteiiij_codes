@@ -254,51 +254,53 @@ import java.util.*;
 
                                   //Program-7 (Compute the Sum of Diagonals of a Matrix)
 
-class Arrays{
-    public static void main(String[] args){
+//class Arrays{
+//    public static void main(String[] args){
+//
+//        Scanner sc=new Scanner(System.in);
+//        System.out.print("Enter the size of Row:");
+//        int row=sc.nextInt();
+//        System.out.print("Enter the size of Column:");
+//        int col=sc.nextInt();
+//
+//        int[][] matrix=new int[row][col];
+//
+//        for(int i=0;i<row;i++){
+//            for(int j=0;j<col;j++){
+//                matrix[i][j]=sc.nextInt();
+//            }
+//
+//        }
+//
+//        //Primary Diagonal
+//
+//        int Pri_Diagonal=0;
+//        for(int i=0;i<row;i++){
+//            Pri_Diagonal+=matrix[i][i];
+//        }
+//
+//        //Secondary Diagonal
+//
+//        int Sec_Diagonal=0;
+//        for(int i=0;i<row;i++){
+//            Sec_Diagonal+=matrix[row-i-1][i];
+//        }
+//
+//        //Printing the Sum of Diagonal
+//
+//        System.out.print("Sum of Primary Diagonal:");
+//        System.out.println(Pri_Diagonal);
+//        System.out.print("Sum of Secondary Diagonal:");
+//        System.out.println(Sec_Diagonal);
+//
+//        int Result=Pri_Diagonal+Sec_Diagonal;
+//
+//        System.out.print("Total Result:");
+//        System.out.println(Result);
+//    }
+//}
 
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the size of Row:");
-        int row=sc.nextInt();
-        System.out.print("Enter the size of Column:");
-        int col=sc.nextInt();
-
-        int[][] matrix=new int[row][col];
-
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){
-                matrix[i][j]=sc.nextInt();
-            }
-
-        }
-
-        //Primary Diagonal
-
-        int Pri_Diagonal=0;
-        for(int i=0;i<row;i++){
-            Pri_Diagonal+=matrix[i][i];
-        }
-
-        //Secondary Diagonal
-
-        int Sec_Diagonal=0;
-        for(int i=0;i<row;i++){
-            Sec_Diagonal+=matrix[row-i-1][i];
-        }
-
-        //Printing the Sum of Diagonal
-
-        System.out.print("Sum of Primary Diagonal:");
-        System.out.println(Pri_Diagonal);
-        System.out.print("Sum of Secondary Diagonal:");
-        System.out.println(Sec_Diagonal);
-
-        int Result=Pri_Diagonal+Sec_Diagonal;
-
-        System.out.print("Total Result:");
-        System.out.println(Result);
-    }
-}
+                              //Program-8
 
 
 
