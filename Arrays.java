@@ -1,4 +1,3 @@
-import java.util.*;
 
 
                            //Program-1 (Minimum size of Arrays)
@@ -118,19 +117,30 @@ import java.util.*;
                                //Program-3(find Largest element in an array)
 
 //class Arrays {
-//    public static void main(String[] args){
+//    public static void main(String[] args) {
 //
-//        Scanner sc=new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 //        System.out.print("Enter Size:");
-//        int size=sc.nextInt();
-//        int[] array=new int[size];
+//        int size = sc.nextInt();
+//        int[] array = new int[size];
 //
 //        System.out.print("Enter Elements:");
-//        for(int i=0;i<size;i++){
-//            array[i]=sc.nextInt();
+//        for (int i = 0; i < size; i++) {
+//            array[i] = sc.nextInt();
 //        }
 //
-//        int max=array[0];
+//
+//        int min = array[0];                                  //For minimum Value
+//        for (int i = 0; i < array.length; i++) {
+//            if (array[i] < min) {
+//                min = array[i];
+//            }
+//        }
+//        System.out.println("Smallest element of Arrays is: " + min);
+//    }
+//}
+//
+//        int max=array[0];                                   //For Maximum Value
 //        for(int i=0;i<array.length;i++){
 //            if(array[i]> max){
 //                max=array[i];
@@ -301,7 +311,7 @@ import java.util.*;
 //    }
 //}
 
-                              //Program-8 (Duplicate elements of an array)
+                          //Program-8 (Duplicate elements of an array)
 
 //class Arrays{
 //    public static void main(String[] args){
@@ -322,6 +332,49 @@ import java.util.*;
 //                    System.out.println(array[j]);
 //            }
 //        }
+//    }
+//}
+
+                           //Program-9(Array in Reverse Order)
+
+//class Arrays{
+//    public static void main(String[] args){
+//
+//        Scanner sc=new Scanner(System.in);
+//        int size=sc.nextInt();
+//
+//        int[] array=new int[size];
+//
+//        for(int i=0;i<size;i++){
+//            array[i]=sc.nextInt();
+//        }
+//
+//        //Printing
+//
+//
+//        for(int i=array.length-1;i>=0;i--){
+//            System.out.println(array[i]);
+//        }
+//    }
+//}
+
+                             //Program-10()
+
+//class Arrays {
+//    public static void main(String[] args) {
+//
+//        Scanner sc = new Scanner(System.in);
+//        int size = sc.nextInt();
+//
+//        int[] a = new int[size];
+//
+//        for (int i = 0; i < size; i++) {
+//            a[i] = sc.nextInt();
+//        }
+//
+//        //Printing
+//
+//
 //    }
 //}
 
