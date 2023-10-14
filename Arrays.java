@@ -1,4 +1,4 @@
-
+import java.util.*;
 
                            //Program-1 (Minimum size of Arrays)
 
@@ -358,25 +358,47 @@
 //    }
 //}
 
-                             //Program-10()
+                             //Program-10(Program for Ascending or Descending Order)
 
-//class Arrays {
+//public class Arrays {
 //    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
 //
-//        Scanner sc = new Scanner(System.in);
-//        int size = sc.nextInt();
+//        // Get the number of elements in the array
+//        System.out.print("Enter the number of elements: ");
+//        int size = scanner.nextInt();
 //
-//        int[] a = new int[size];
+//        // Create an array to store the elements
+//        int[] array = new int[size];
 //
+//        // Get the elements from the user
+//        System.out.println("Enter the elements:");
 //        for (int i = 0; i < size; i++) {
-//            a[i] = sc.nextInt();
+//            array[i] = scanner.nextInt();
 //        }
 //
-//        //Printing
+//        // Close the scanner
+//        scanner.close();
 //
+//        // Sort the array in ascending order.
+//        for (int i = 0; i < size - 1; i++) {
+//            for (int j = i + 1; j < size; j++) {
+//                if (array[i] > array[j]) {
+//                    int temp = array[i];
+//                    array[i] = array[j];
+//                    array[j] = temp;
+//                }
+//            }
+//        }
 //
+//        // Print the sorted array in ascending order.
+//        System.out.println("The sorted array in ascending order is: ");
+//        for (int i = 0; i < size; i++) {
+//            System.out.print(array[i] + " ");
+//        }
 //    }
 //}
 
+                                    //Program 11 ()
 
 
