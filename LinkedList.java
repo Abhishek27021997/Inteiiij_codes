@@ -96,7 +96,7 @@ public class LinkedList {
         list.printlist();
 
         list.deletefirst();
-        list.addlast("Testing");
+        list.addlast("Testingg");
         list.printlist();
 
         list.deletelast();
